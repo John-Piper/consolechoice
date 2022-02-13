@@ -4,6 +4,7 @@
 #' @param instruction_msg character.  Message shows under the menu selection
 #' @param quit_key character.  Character value for the user to quit the menu
 #' @param quit_message character.  Character value to explain how to quit the menu
+#' @param logical.  TRUE return number choice.  FALSE returns the index of chr_vector
 #'
 #' @return character
 #'
@@ -15,7 +16,8 @@
 console_menu <- function(chr_vector,
                          instruction_msg = "Please type in the console your choice from above and press enter: ",
                          quit_key = "q",
-                         quit_message = paste0("To quit please type ", quit_key, " and press return")) {
+                         quit_message = paste0("To quit please type ", quit_key, " and press return"),
+                         return_number = TRUE) {
 
   user_choice <- ""
 
@@ -52,8 +54,12 @@ console_menu <- function(chr_vector,
 
   }
 
+  if(user_choice != quit_key & return_number != FALSE) {
+
+    user_choice <- chr_vector[user_choice]
+
+  }
+
   return(user_choice)
 
 }
-
-
