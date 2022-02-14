@@ -5,7 +5,7 @@
 #' @param quit_key character.  Character value for the user to quit the menu
 #' @param quit_message character.  Character value to explain how to quit the menu
 #' @param return_number logical.  TRUE return number choice.  FALSE returns the index of chr_vector
-#' @param test_args list(test_mode logical, test_value character).  Only use for testing.
+#' @param test_args list(test_mode logical, test_input character).  Only use for testing.
 #'
 #' @return character
 #'
@@ -19,15 +19,15 @@ console_menu <- function(chr_vector,
                          quit_key = "q",
                          quit_message = paste0("To quit please type ", quit_key, " and press return"),
                          return_number = TRUE,
-                         test_args = list(test_mode = FALSE, test_value = NA_character_)) {
+                         test_args = list(test_mode = FALSE, test_input = NA_character_)) {
 
   user_choice <- ""
 
   current_loop_number <- 1
 
-  max_number_of_loops <- 100
+  max_number_of_loops <- 50
 
-  while(TRUE) {
+  while(current_loop_number < max_number_of_loops) {
 
     print_menu(chr_vector)
 
@@ -35,7 +35,8 @@ console_menu <- function(chr_vector,
 
     if(test_args$test_mode) {
 
-      user_choice <- test_args$test_value[current_loop_number]
+      user_choice <- test_args$test_input[current_loop_number]
+      cat(instruction_msg)
 
     } else {
 
@@ -53,14 +54,14 @@ console_menu <- function(chr_vector,
         break
     }
 
-    if(current_loop_number == max_number_of_loops) {
-
-      stop(paste0("Max number of iterations through while loop reached.
-                  Current max iterations is ", max_number_of_loops))
-
-    }
-
     current_loop_number <- current_loop_number + 1
+
+  }
+
+  if(current_loop_number == max_number_of_loops) {
+
+    stop(paste("Max number of iterations through while loop reached. Current max iterations is",
+               max_number_of_loops))
 
   }
 
