@@ -24,7 +24,7 @@ print_menu <- function(chr_vector) {
 
   for (index in numbers) {
 
-    print(paste0(index, ": ", chr_vector[index]))
+    cat(index, ": ", chr_vector[index],"\n", sep = "")
   }
 
 }
