@@ -13,9 +13,14 @@
 #'
 #' console_menu(c("Eat", "sleep", "code", "repeat"))
 #'
-#' console_menu(c("Eat", "sleep", "code", "repeat"), "What would you like to do?", "quit", "Type quit to exit")
+#' console_menu(
+#'              c("Eat", "sleep", "code", "repeat"),
+#'              "What would you like to do?",
+#'              "quit",
+#'              "Type quit to exit"
+#'              )
 console_menu <- function(chr_vector,
-                         instruction_msg = "Please type in the console your choice from above and press enter: ",
+                         instruction_msg = "Please type in the console your choice and press enter: ",
                          quit_key = "q",
                          quit_message = paste0("To quit please type ", quit_key, " and press return"),
                          return_number = TRUE,

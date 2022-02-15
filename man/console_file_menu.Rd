@@ -8,8 +8,7 @@ wrapper function to console_menu}
 console_file_menu(
   folder_path = ".",
   pattern = NULL,
- 
-    instruction_msg = "Please type in the console your choice from above and press enter: ",
+  instruction_msg = "Please type in the console your choice and press enter: ",
   quit_key = "q",
   quit_message = paste0("To quit please type ", quit_key, " and press return"),
   return_number = FALSE,
@@ -44,11 +43,12 @@ console_file_menu("c/", ".txt")
 
 console_file_menu("c/", ".txt", instruction_msg = "Please select a file to open")
 
-console_file_menu(folder_path = "c/",
+console_file_menu(
+                 folder_path = "c/",
                  pattern = "xlsm",
                  instruction_msg = "Choose a excel file to open",
                  quit_key = "Q",
-                 quit_message = "Type in Q and press return to quit"
+                 quit_message = "Type in Q and press return to quit",
                  return_number = TRUE
                  )
 }

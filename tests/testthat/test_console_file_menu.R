@@ -18,7 +18,7 @@ test_args_select_two <- list(test_mode = TRUE, test_input = "2")
 test_error_msg <- "No file names were found in the folder path and pattern provided."
 
 expected_menu_message <- paste0("1: example_doc_one.txt\\n2: example_doc_two.txt\\nTo quit please type q and press return\\n",
-                          "Please type in the console your choice from above and press enter: ")
+                          "Please type in the console your choice and press enter: ")
 
 
 # tests

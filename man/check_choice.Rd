@@ -23,17 +23,13 @@ Helper function for console_menu
 }
 \examples{
 
-check_choice("a", "b"), 1)
-# TRUE
+library("consolechoice")
 
-check_choice(c("a", "b"),2)
-# TRUE
+check_choice(c("a", "b"), 1)
 
-check_choice(c("a", "b"),3)
-# FALSE
+check_choice(c("a", "b"), 2)
 
-check_choice(c("a", "b"),"a")
-# FALSE - The "a" argument will convert to 0 in the function
+check_choice(c("a", "b"), 3)
 
-
+check_choice(c("a", "b"), "a")
 }
