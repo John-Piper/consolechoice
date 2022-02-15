@@ -17,6 +17,4 @@ Helper function for console_menu
 \examples{
 
 print_menu(c("Item One", "Item Two"))
-# [1] 1: Item one
-# [1] 2: Item two
 }

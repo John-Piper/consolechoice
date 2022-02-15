@@ -23,8 +23,6 @@ Helper function for console_menu
 }
 \examples{
 
-library("consolechoice")
-
 check_choice(c("a", "b"), 1)
 
 check_choice(c("a", "b"), 2)

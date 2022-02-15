@@ -33,7 +33,7 @@ character
 Prints out a menu from a character vector and waits for user selection
 }
 \examples{
-
+\dontrun{
 console_menu(c("Eat", "sleep", "code", "repeat"))
 
 console_menu(
@@ -42,4 +42,5 @@ console_menu(
              "quit",
              "Type quit to exit"
              )
+}
 }

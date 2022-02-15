@@ -10,21 +10,27 @@
 #' @param test_args list(test_mode logical, test_input character).  Only use for testing.
 #'
 #' @return character
+#' @export
 #'
 #' @examples
-#'
-#' console_file_menu("c/", ".txt")
-#'
-#' console_file_menu("c/", ".txt", instruction_msg = "Please select a file to open")
+#' \dontrun{
+#' console_file_menu("/folder/path/with/files")
 #'
 #' console_file_menu(
-#'                  folder_path = "c/",
-#'                  pattern = "xlsm",
+#'                   "/folder/path/with/files",
+#'                   ".bmp",
+#'                   instruction_msg = "Please select a file to open"
+#'                   )
+#'
+#' console_file_menu(
+#'                  folder_path = "/folder/path/with/files",
+#'                  pattern = "example_doc",
 #'                  instruction_msg = "Choose a excel file to open",
 #'                  quit_key = "Q",
 #'                  quit_message = "Type in Q and press return to quit",
 #'                  return_number = TRUE
 #'                  )
+#' }
 console_file_menu <- function(folder_path = ".",
                               pattern = NULL,
                               instruction_msg = "Please type in the console your choice and press enter: ",

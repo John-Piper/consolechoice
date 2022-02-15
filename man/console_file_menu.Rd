@@ -38,17 +38,22 @@ Prints out a menu from a list of file names in a folder for user selection
 wrapper function to console_menu
 }
 \examples{
-
-console_file_menu("c/", ".txt")
-
-console_file_menu("c/", ".txt", instruction_msg = "Please select a file to open")
+\dontrun{
+console_file_menu("/folder/path/with/files")
 
 console_file_menu(
-                 folder_path = "c/",
-                 pattern = "xlsm",
+                  "/folder/path/with/files",
+                  ".bmp",
+                  instruction_msg = "Please select a file to open"
+                  )
+
+console_file_menu(
+                 folder_path = "/folder/path/with/files",
+                 pattern = "example_doc",
                  instruction_msg = "Choose a excel file to open",
                  quit_key = "Q",
                  quit_message = "Type in Q and press return to quit",
                  return_number = TRUE
                  )
+}
 }

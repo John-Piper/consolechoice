@@ -8,9 +8,10 @@
 #' @param test_args list(test_mode logical, test_input character).  Only use for testing.
 #'
 #' @return character
+#' @export
 #'
 #' @examples
-#'
+#' \dontrun{
 #' console_menu(c("Eat", "sleep", "code", "repeat"))
 #'
 #' console_menu(
@@ -19,6 +20,7 @@
 #'              "quit",
 #'              "Type quit to exit"
 #'              )
+#' }
 console_menu <- function(chr_vector,
                          instruction_msg = "Please type in the console your choice and press enter: ",
                          quit_key = "q",

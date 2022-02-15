@@ -7,7 +7,7 @@
 #' @return If the choice is a number within the length range of the choices the return value will be TRUE.
 #'         If the choice is a number but is not within the length range of the choice the return value will be FALSE.
 #'         If the choices argument is not a character vector with a length of at least one then the program will stop
-#'
+#' @export
 #' @examples
 #'
 #' check_choice(c("a", "b"), 1)

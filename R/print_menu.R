@@ -4,12 +4,11 @@
 #' @param chr_vector character vector
 #'
 #' @return NULL
+#' @export
 #'
 #' @examples
 #'
 #' print_menu(c("Item One", "Item Two"))
-#' # [1] 1: Item one
-#' # [1] 2: Item two
 print_menu <- function(chr_vector) {
 
   max_index <- length(chr_vector)
