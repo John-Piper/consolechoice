@@ -10,7 +10,8 @@ console_menu(
     instruction_msg = "Please type in the console your choice from above and press enter: ",
   quit_key = "q",
   quit_message = paste0("To quit please type ", quit_key, " and press return"),
-  return_number = TRUE
+  return_number = TRUE,
+  test_args = list(test_mode = FALSE, test_input = NA_character_)
 )
 }
 \arguments{
@@ -22,7 +23,9 @@ console_menu(
 
 \item{quit_message}{character.  Character value to explain how to quit the menu}
 
-\item{logical.}{TRUE return number choice.  FALSE returns the index of chr_vector}
+\item{return_number}{logical.  TRUE return number choice.  FALSE returns the index of chr_vector}
+
+\item{test_args}{list(test_mode logical, test_input character).  Only use for testing.}
 }
 \value{
 character

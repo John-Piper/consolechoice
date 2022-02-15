@@ -1,6 +1,5 @@
 library("consolechoice")
 
-
 # setup
 
 test_chr_vector <- c("Eat", "Sleep", "Test", "Repeat")
