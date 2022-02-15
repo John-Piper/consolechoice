@@ -20,6 +20,24 @@
 #'              "quit",
 #'              "Type quit to exit"
 #'              )
+#' # Example code on how the function could be used
+#' user_choice <- console_menu(c("Eat", "sleep"))
+#'
+#' switch_result <- switch(
+#'     user_choice,
+#'     "1" = # code here,
+#'     "2" = # code here,
+#'     "q" = # exit code here
+#' )
+#' # Example code if the function returned the name in the character vector
+#' user_choice <- console_menu(c("Eat", "sleep"), return_number = FALSE)
+#'
+#' switch_result <- switch(
+#'     user_choice,
+#'     "Eat" = # code here,
+#'     "sleep" = # code here,
+#'     "q" = # exit code here
+#' )
 #' }
 console_menu <- function(chr_vector,
                          instruction_msg = "Please type in the console your choice and press enter: ",

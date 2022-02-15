@@ -55,5 +55,24 @@ console_file_menu(
                  quit_message = "Type in Q and press return to quit",
                  return_number = TRUE
                  )
+
+# Example code on how the function could be used
+user_choice <- console_file_menu("/folder/path/", ".doc")
+
+switch_result <- switch(
+    user_choice,
+    "document_one.doc" = # code here,
+    "document_two.doc" = # code here,
+    "q" = # exit code here
+)
+# Example code if the function returned the number in the list
+user_choice <- console_file_menu("/folder/path/", ".doc", return_number = FALSE)
+
+switch_result <- switch(
+    user_choice,
+    "1" = # code here,
+    "2" = # code here,
+    "q" = # exit code here
+)
 }
 }
