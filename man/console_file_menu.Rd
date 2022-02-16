@@ -2,13 +2,12 @@
 % Please edit documentation in R/console_file_menu.R
 \name{console_file_menu}
 \alias{console_file_menu}
-\title{Prints out a menu from a list of file names in a folder for user selection
-wrapper function to console_menu}
+\title{Prints out a menu from a list of file names in a folder for user selection}
 \usage{
 console_file_menu(
   folder_path = ".",
   pattern = NULL,
-  instruction_msg = "Please type in the console your choice and press enter: ",
+  instruction_msg = "Type the number in the console your choice and press enter: ",
   quit_key = "q",
   quit_message = paste0("To quit please type ", quit_key, " and press return"),
   return_number = FALSE,
@@ -16,17 +15,17 @@ console_file_menu(
 )
 }
 \arguments{
-\item{folder_path}{character}
+\item{folder_path}{character.}
 
-\item{pattern}{character. Regex pattern used in list.files}
+\item{pattern}{character. Regex pattern used in list.files.}
 
-\item{instruction_msg}{character.  Message shows under the menu selection}
+\item{instruction_msg}{character.  Message shows under the menu selection.}
 
-\item{quit_key}{character.  Character value for the user to quit the menu}
+\item{quit_key}{character.  Character value for the user to quit the menu.}
 
-\item{quit_message}{character.  Character value to explain how to quit the menu}
+\item{quit_message}{character.  Character value to explain how to quit the menu.}
 
-\item{return_number}{logical.  TRUE return number choice.  FALSE returns the index of chr_vector}
+\item{return_number}{logical.  TRUE return number choice.  FALSE returns the index of chr_vector.}
 
 \item{test_args}{list(test_mode logical, test_input character).  Only use for testing.}
 }
@@ -34,27 +33,22 @@ console_file_menu(
 character
 }
 \description{
-Prints out a menu from a list of file names in a folder for user selection
-wrapper function to console_menu
+wrapper function to console_menu.
 }
 \examples{
 \dontrun{
 console_file_menu("/folder/path/with/files")
 
-console_file_menu(
-                  "/folder/path/with/files",
+console_file_menu("/folder/path/with/files",
                   ".bmp",
-                  instruction_msg = "Please select a file to open"
-                  )
+                  instruction_msg = "Please select a file to open")
 
-console_file_menu(
-                 folder_path = "/folder/path/with/files",
+console_file_menu(folder_path = "/folder/path/with/files",
                  pattern = "example_doc",
                  instruction_msg = "Choose a excel file to open",
                  quit_key = "Q",
                  quit_message = "Type in Q and press return to quit",
-                 return_number = TRUE
-                 )
+                 return_number = TRUE)
 
 # Example code on how the function could be used
 user_choice <- console_file_menu("/folder/path/", ".doc")

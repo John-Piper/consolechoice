@@ -2,19 +2,19 @@
 % Please edit documentation in R/print_menu.R
 \name{print_menu}
 \alias{print_menu}
-\title{Prints out a character vector starting with a sequential number as a menu.
-Helper function for console_menu}
+\title{Prints out a character vector starting with a sequential number as a menu}
 \usage{
 print_menu(chr_vector)
 }
 \arguments{
-\item{chr_vector}{character vector}
+\item{chr_vector}{character vector.}
 }
 \description{
-Prints out a character vector starting with a sequential number as a menu.
-Helper function for console_menu
+Helper function for console_menu.
 }
 \examples{
 
+\dontrun{
 print_menu(c("Item One", "Item Two"))
+}
 }

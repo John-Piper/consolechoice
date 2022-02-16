@@ -25,15 +25,15 @@ test_that("Returns FALSE when a non numeric value is entered", {
 })
 
 test_that("expect an error if the vector is length 0",{
-  expect_error(check_choice(c(), 1), "An empty character vector can not be used.  Please use a character vector of a least the length of one")
+  expect_error(check_choice(c(), 1), "Error: The character vector length requirs to be one or greate than one.")
 })
 
 test_that("expect an error if the vector is not a character",{
-  expect_error(check_choice(c(1,2,3), 1), "A non character vector was passed as an argument.  Please use a character vector")
+  expect_error(check_choice(c(1,2,3), 1), "Error: A non character vector was passed as an argument.")
 })
 
 test_that("expect an error if a list has been used instead of a vector",{
-  expect_error(check_choice(list(1, "a"), 1), "A list can not be used.  Please only use a character vector")
+  expect_error(check_choice(list(1, "a"), 1), "Error: A list was used in the argument.  Only a character vector can be used.")
 })
 
 

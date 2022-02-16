@@ -1,6 +1,6 @@
 #' Prints out a menu from a character vector and waits for user selection
 #'
-#' @param chr_vector character vector
+#' @param chr_vector character vector.
 #' @param instruction_msg character.  Message shows under the menu selection
 #' @param quit_key character.  Character value for the user to quit the menu
 #' @param quit_message character.  Character value to explain how to quit the menu
@@ -14,12 +14,11 @@
 #' \dontrun{
 #' console_menu(c("Eat", "sleep", "code", "repeat"))
 #'
-#' console_menu(
-#'              c("Eat", "sleep", "code", "repeat"),
+#' console_menu(c("Eat", "sleep", "code", "repeat"),
 #'              "What would you like to do?",
 #'              "quit",
-#'              "Type quit to exit"
-#'              )
+#'              "Type quit to exit")
+#'
 #' # Example code on how the function could be used
 #' user_choice <- console_menu(c("Eat", "sleep"))
 #'
@@ -40,7 +39,7 @@
 #' )
 #' }
 console_menu <- function(chr_vector,
-                         instruction_msg = "Please type in the console your choice and press enter: ",
+                         instruction_msg = "Type the number in the console your choice and press enter: ",
                          quit_key = "q",
                          quit_message = paste0("To quit please type ", quit_key, " and press return"),
                          return_number = TRUE,
@@ -58,9 +57,10 @@ console_menu <- function(chr_vector,
 
     cat(quit_message, "\n", sep = "")
 
-    if(test_args$test_mode) {
+    if (test_args$test_mode) {
 
       user_choice <- test_args$test_input[current_loop_number]
+
       cat(instruction_msg)
 
     } else {
@@ -69,12 +69,12 @@ console_menu <- function(chr_vector,
 
       }
 
-    if(user_choice == quit_key) {
+    if (user_choice == quit_key) {
 
         break
     }
 
-    if(check_choice(chr_vector, user_choice) == TRUE) {
+    if (check_choice(chr_vector, user_choice) == TRUE) {
 
         break
     }
@@ -83,19 +83,19 @@ console_menu <- function(chr_vector,
 
   }
 
-  if(current_loop_number == max_number_of_loops) {
+  if (current_loop_number == max_number_of_loops) {
 
-    stop(paste("Max number of iterations through while loop reached. Current max iterations is",
+    stop(paste("Error: Max number of iterations through while loop reached. Current max iterations is",
                max_number_of_loops))
 
   }
 
-  if(user_choice != quit_key & return_number == FALSE) {
+  if (user_choice != quit_key & return_number == FALSE) {
 
     user_choice <- chr_vector[as.numeric(user_choice)]
 
   }
 
-  return(user_choice)
+  user_choice
 
 }

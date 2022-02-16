@@ -6,7 +6,7 @@
 \usage{
 console_menu(
   chr_vector,
-  instruction_msg = "Please type in the console your choice and press enter: ",
+  instruction_msg = "Type the number in the console your choice and press enter: ",
   quit_key = "q",
   quit_message = paste0("To quit please type ", quit_key, " and press return"),
   return_number = TRUE,
@@ -14,7 +14,7 @@ console_menu(
 )
 }
 \arguments{
-\item{chr_vector}{character vector}
+\item{chr_vector}{character vector.}
 
 \item{instruction_msg}{character.  Message shows under the menu selection}
 
@@ -36,12 +36,11 @@ Prints out a menu from a character vector and waits for user selection
 \dontrun{
 console_menu(c("Eat", "sleep", "code", "repeat"))
 
-console_menu(
-             c("Eat", "sleep", "code", "repeat"),
+console_menu(c("Eat", "sleep", "code", "repeat"),
              "What would you like to do?",
              "quit",
-             "Type quit to exit"
-             )
+             "Type quit to exit")
+
 # Example code on how the function could be used
 user_choice <- console_menu(c("Eat", "sleep"))
 
