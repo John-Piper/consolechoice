@@ -23,7 +23,7 @@ test_error_msg_no_file <- "No file names were found in the folder path and patte
 
 test_error_msg_no_chr_args <- "Error: A non character argument used for the folder path."
 
-expected_menu_message <- paste0("1: example_doc_one.txt\\n2: example_doc_two.txt\\nTo quit please type q and press return\\n",
+expected_menu_message <- paste0("1: example_doc_one.txt\\n2: example_doc_two.txt\\nTo quit please type q and press return.\\n",
                           "Type the number in the console your choice and press enter: ")
 
 

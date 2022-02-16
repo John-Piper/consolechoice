@@ -41,7 +41,7 @@
 console_menu <- function(chr_vector,
                          instruction_msg = "Type the number in the console your choice and press enter: ",
                          quit_key = "q",
-                         quit_message = paste0("To quit please type ", quit_key, " and press return"),
+                         quit_message = paste0("To quit please type ", quit_key, " and press return."),
                          return_number = TRUE,
                          test_args = list(test_mode = FALSE, test_input = NA_character_)) {
 

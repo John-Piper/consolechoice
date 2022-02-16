@@ -51,7 +51,7 @@ console_file_menu <- function(folder_path = ".",
                               pattern = NULL,
                               instruction_msg = "Type the number in the console your choice and press enter: ",
                               quit_key = "q",
-                              quit_message = paste0("To quit please type ", quit_key, " and press return"),
+                              quit_message = paste0("To quit please type ", quit_key, " and press return."),
                               return_number = FALSE,
                               test_args = list(test_mode = FALSE, test_input = NA_character_)) {
 

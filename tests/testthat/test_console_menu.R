@@ -18,9 +18,9 @@ test_instruction_msg <- "Choose above please"
 
 test_quit_key <- "quit"
 
-test_quit_message <- "Type in quit to quit"
+test_quit_message <- "Type in quit to quit."
 
-expected_menu_message <- "1: Eat\\n2: Sleep\\n3: Test\\n4: Repeat\\nType in quit to quit\\nChoose above please"
+expected_menu_message <- "1: Eat\\n2: Sleep\\n3: Test\\n4: Repeat\\nType in quit to quit.\\nChoose above please"
 
 
 # tests
