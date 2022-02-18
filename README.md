@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/John-Piper/consolechoice/workflows/R-CMD-check/badge.svg)](https://github.com/John-Piper/consolechoice/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/consolechoice)](https://CRAN.R-project.org/package=consolechoice)
 <!-- badges: end -->
 
 The goal of consolechoice is to make it easier to display a menu to the
@@ -42,7 +44,8 @@ options <- c("Eat", "Sleep", "Code", "Repeat")
 
 choice <- console_menu(options)
 
-switch(choice,
+result <- switch(
+  choice,
        "1" = "Eating some food",
        "2" = "Going to Sleep",
        "3" = "Doing some coding",
@@ -50,7 +53,7 @@ switch(choice,
        "q" = stop("You have decided to quit")
 )
        
-choice
+print(result)
 
 
 # Example using console_file_menu function.
