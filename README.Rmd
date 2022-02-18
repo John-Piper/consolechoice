@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/John-Piper/consolechoice/workflows/R-CMD-check/badge.svg)](https://github.com/John-Piper/consolechoice/actions)
 [![CRAN status](https://www.r-pkg.org/badges/version/consolechoice)](https://CRAN.R-project.org/package=consolechoice)
+[![Codecov test coverage](https://codecov.io/gh/John-Piper/consolechoice/branch/main/graph/badge.svg)](https://app.codecov.io/gh/John-Piper/consolechoice?branch=main)
 <!-- badges: end -->
 
 The goal of consolechoice is to make it easier to display a menu to the console for the user to select an option.  This will save time writing code with loops and conditional logic. Only one line of code is required using consolechoice to solve this issue.

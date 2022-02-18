@@ -8,6 +8,8 @@
 [![R-CMD-check](https://github.com/John-Piper/consolechoice/workflows/R-CMD-check/badge.svg)](https://github.com/John-Piper/consolechoice/actions)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/consolechoice)](https://CRAN.R-project.org/package=consolechoice)
+[![Codecov test
+coverage](https://codecov.io/gh/John-Piper/consolechoice/branch/main/graph/badge.svg)](https://app.codecov.io/gh/John-Piper/consolechoice?branch=main)
 <!-- badges: end -->
 
 The goal of consolechoice is to make it easier to display a menu to the
