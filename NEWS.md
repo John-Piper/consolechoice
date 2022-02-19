@@ -8,4 +8,3 @@ Bug Issues (2022-02-19)
 - If the user types in a number with a letter in the console, when instructed, the function returns unexpected results.
 
 
-========================================================================================================================
