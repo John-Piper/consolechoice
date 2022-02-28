@@ -36,4 +36,17 @@ test_that("expect an error if a list has been used instead of a vector",{
   expect_error(check_choice(list(1, "a"), 1), "Error: A list was used in the argument.  Only a character vector can be used.")
 })
 
+test_that("expect False when a matching number with other characters on the left are in the input", {
+  expect_false(check_choice(test_vector, " 1"))
+})
+
+test_that("expect False when a matching number with other characters on the right are in the input", {
+  expect_false(check_choice(test_vector, "2 "))
+})
+
+test_that("expect False when a matching number with other characters on either side are in the input", {
+  expect_false(check_choice(test_vector, "asd3asc"))
+})
+
+
 

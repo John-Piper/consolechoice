@@ -34,16 +34,20 @@ check_choice <- function(choices, choice) {
     stop("Error: A non character vector was passed as an argument.")
   }
 
-  choice <- as.numeric(gsub("[^1-9]", 0, choice))
+  # grepl will return false if a non numeric character is in the string.
+  if (!grepl("[^0-9]", choice)) {
 
-  if (is.numeric(choice)) {
+    choice <- as.numeric(choice)
 
-    max_number_choice <- length(choices)
+    if (is.numeric(choice)) {
 
-    if (choice >= 1 & choice <= max_number_choice) {
+      max_number_choice <- length(choices)
 
-      return(TRUE)
+      if (choice >= 1 & choice <= max_number_choice) {
 
+        return(TRUE)
+
+      }
     }
   }
 
