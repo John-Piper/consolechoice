@@ -3,4 +3,4 @@ There were no ERRORs and WARNINGs
 
 There was 1 NOTE:
 
-* This is my first submission.
+* Bug fix in the function check_choice.  The exact number will return True in the function check_choice.  In the previous version the function returned True when the correct number   was submitted with a character on the left, right or either side of the number. 
