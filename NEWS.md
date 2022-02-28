@@ -1,10 +1,9 @@
-consolechoice v1.0.0 (Release date: 2022-02-17)
+consolechoice v1.0.1 (Release date: 2022-02-28)
 ===============================================
 
+Bug Fixes
 
-Bug Issues (2022-02-19)
 
-
-- If the user types in a number with a letter in the console, when instructed, the function returns unexpected results.
+- The exact number will return True in the function check_choice.  In the previous version the function returned True when the correct number   was submitted with a character on the left, right or either side of the number. 
 
 
