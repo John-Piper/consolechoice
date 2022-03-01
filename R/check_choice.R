@@ -23,15 +23,15 @@
 check_choice <- function(choices, choice) {
 
   if (length(choices) == 0) {
-    stop("Error: The character vector length requirs to be one or greate than one.")
+    stop("Error: The character vector length requirs to be one or greate than one.", .call = FALSE)
   }
 
   if (is.list(choices)) {
-    stop("Error: A list was used in the argument.  Only a character vector can be used.")
+    stop("Error: A list was used in the argument.  Only a character vector can be used.", .call = FALSE)
   }
 
   if (class(choices) != "character") {
-    stop("Error: A non character vector was passed as an argument.")
+    stop("Error: A non character vector was passed as an argument.", .call = FALSE)
   }
 
   # grepl will return false if a non numeric character is in the string.

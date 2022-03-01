@@ -17,7 +17,7 @@ print_menu <- function(chr_vector) {
 
   if (max_index == 0) {
 
-    stop("Error: The Character vector length must be greater than one.")
+    stop("Error: The Character vector length must be greater than one.", .call = FALSE)
 
   }
 
