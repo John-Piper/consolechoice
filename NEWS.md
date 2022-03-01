@@ -4,7 +4,7 @@ consolechoice v1.1.1 (Release date: 2022-03-01)
 
 Improvements
 
-- The stop function uses the argument .call = FALSE when used in the helper functions "check_choice" and "print_menu"  This avoids the error message being misleading to user as the helper function names are hidden if an error message occurs within these functions. 
+- The stop function uses the argument call. = FALSE when used in the helper functions "check_choice" and "print_menu"  This avoids the error message being misleading to user as the helper function names are hidden if an error message occurs within these functions. 
 
 
 
