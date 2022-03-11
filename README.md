@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# consolechoice
+# consolechoice <img src='man/figures/logo.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 
@@ -10,6 +10,7 @@
 status](https://www.r-pkg.org/badges/version/consolechoice)](https://CRAN.R-project.org/package=consolechoice)
 [![Codecov test
 coverage](https://codecov.io/gh/John-Piper/consolechoice/branch/main/graph/badge.svg)](https://app.codecov.io/gh/John-Piper/consolechoice?branch=main)
+
 <!-- badges: end -->
 
 The goal of consolechoice is to make it easier to display a menu to the
