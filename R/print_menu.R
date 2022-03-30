@@ -6,6 +6,8 @@
 #'
 #' @return NULL
 #'
+#' @noRd
+#'
 #' @examples
 #'
 #' \dontrun{

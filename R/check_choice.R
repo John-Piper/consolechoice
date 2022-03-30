@@ -9,6 +9,8 @@
 #'         If the choice is a number but is not within the length range of the choice the return value will be FALSE.
 #'         If the choices argument is not a character vector with a length of at least one then the program will stop.
 #'
+#' @noRd
+#'
 #' @examples
 #'
 #' \dontrun{
