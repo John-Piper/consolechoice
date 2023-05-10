@@ -10,7 +10,12 @@
 status](https://www.r-pkg.org/badges/version/consolechoice)](https://CRAN.R-project.org/package=consolechoice)
 [![Codecov test
 coverage](https://codecov.io/gh/John-Piper/consolechoice/branch/main/graph/badge.svg)](https://app.codecov.io/gh/John-Piper/consolechoice?branch=main)
-
+[![Downloads
+(monthly)](https://cranlogs.r-pkg.org/badges/consolechoice?color=brightgreen)](https://www.r-pkg.org/pkg/consolechoice)
+[![Downloads
+(total)](https://cranlogs.r-pkg.org/badges/grand-total/consolechoice?color=brightgreen)](https://www.r-pkg.org/pkg/consolechoice)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <!-- badges: end -->
 
 The goal of consolechoice is to make it easier to display a menu to the
